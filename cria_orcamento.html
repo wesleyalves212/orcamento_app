@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>OrçamentoApp - Gerador De Orçamento Online Gratuito</title>
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" media="print" href="css/impressao.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <!--header no style.css-->
+      <div class="container">
+        <!--container no grid.css-->
+        <a href="index.html" class="grid-4">
+          <!--grid-4 no grid.css-->
+          <img src="img/orcamento_app.svg" alt="OrçamentoApp" />
+        </a>
+        <nav class="grid-12 header_menu">
+          <!--gri-12 no grid.css / header_menu no style.css-->
+          <ul>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li>
+              <a class="link_ativo" href="cria_orcamento.html"
+                >Criar Orçamento</a
+              >
+            </li>
+            <!--link_ativo no style.css-->
+            <li><a href="suporte.html">Suporte</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="container">
+      <div class="dados_empresa">
+        <h1>Dados Da Empresa</h1>
+        <label class="nome_empresa" for="nome_empresa">Nome</label>
+        <input type="text" id="nome_empresa" name="nome_empresa" />
+        <label class="cpf_empresa" for="cpf_empresa">CPF/CNPJ</label>
+        <input type="text" id="cpf_empresa" name="cpf_empresa" />
+        <label class="endereco_empresa" for="endereco_empresa">Endereço</label>
+        <input type="text" id="endereco_empresa" name="endereco_empresa" />
+        <label class="email_empresa" for="email_empresa">E-mail</label>
+        <input type="text" id="email_empresa" name="email_empresa" />
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="dados_cliente">
+        <h1>Dados Do Cliente</h1>
+        <label class="nome_empresa" for="nome_empresa">Nome</label>
+        <input type="text" id="nome_empresa" name="nome_empresa" />
+        <label class="cpf_empresa" for="cpf_empresa">CPF/CNPJ</label>
+        <input type="text" id="cpf_empresa" name="cpf_empresa" />
+        <label class="endereco_empresa" for="endereco_empresa">Endereço</label>
+        <input type="text" id="endereco_empresa" name="endereco_empresa" />
+        <label class="email_empresa" for="email_empresa">E-mail</label>
+        <input type="text" id="email_empresa" name="email_empresa" />
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="orcamento">
+        <h1>Orçamento</h1>
+        <div>
+          <input type="text" id="campo_produto" name="campo_produto" />
+          <label class="valor1 valores" for="valor1">R$</label>
+          <input
+            type="text"
+            class="campo_valores"
+            id="valor1"
+            name="valor1"
+            value="0"
+            onkeyup="calcular()"
+          />
+        </div>
+        <div>
+          <input type="text" id="campo_produto" name="campo_produto" />
+          <label class="valor2 valores" for="valor2">R$</label>
+          <input
+            type="text"
+            class="campo_valores"
+            id="valor2"
+            name="valor2"
+            value="0"
+            onkeyup="calcular()"
+          />
+        </div>
+        <div>
+          <input type="text" id="campo_produto" name="campo_produto" />
+          <label class="valor3 valores" for="valor3">R$</label>
+          <input
+            type="text"
+            class="campo_valores"
+            id="valor3"
+            name="valor3"
+            value="0"
+            onkeyup="calcular()"
+          />
+        </div>
+        <div>
+          <input type="text" id="campo_produto" name="campo_produto" />
+          <label class="valor4 valores" for="valor4">R$</label>
+          <input
+            type="text"
+            class="campo_valores"
+            id="valor4"
+            name="valor4"
+            value="0"
+            onkeyup="calcular()"
+          />
+        </div>
+        <div>
+          <input type="text" id="campo_produto" name="campo_produto" />
+          <label class="valor5 valores" for="valor5">R$</label>
+          <input
+            type="text"
+            class="campo_valores"
+            id="valor5"
+            name="valor5"
+            value="0"
+            onkeyup="calcular()"
+          />
+        </div>
+        <div>
+          <input type="text" id="campo_produto" name="campo_produto" />
+          <label class="valor6 valores" for="valor6">R$</label>
+          <input
+            type="text"
+            class="campo_valores"
+            id="valor6"
+            name="valor6"
+            value="0"
+            onkeyup="calcular()"
+          />
+        </div>
+        <div>
+          <input type="text" id="campo_produto" name="campo_produto" />
+          <label class="valor7 valores" for="valor7">R$</label>
+          <input
+            type="text"
+            class="campo_valores"
+            id="valor7"
+            name="valor7"
+            value="0"
+            onkeyup="calcular()"
+          />
+        </div>
+        <div>
+          <input type="text" id="campo_produto" name="campo_produto" />
+          <label class="valor8 valores" for="valor8">R$</label>
+          <input
+            type="text"
+            class="campo_valores"
+            id="valor8"
+            name="valor8"
+            value="0"
+            onkeyup="calcular()"
+          />
+        </div>
+        <div>
+          <input type="text" id="campo_produto" name="campo_produto" />
+          <label class="valor9 valores" for="valor9">R$</label>
+          <input
+            type="text"
+            class="campo_valores"
+            id="valor9"
+            name="valor9"
+            value="0"
+            onkeyup="calcular()"
+          />
+        </div>
+        <div>
+          <input type="text" id="campo_produto" name="campo_produto" />
+          <label class="valor10 valores" for="valor10">R$</label>
+          <input
+            type="text"
+            class="campo_valores"
+            id="valor10"
+            name="valor10"
+            value="0"
+            onkeyup="calcular()"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="finalizar_orcamento">
+        <label class="metodo_pagamento" for="metodo_pagamento"
+          >Método Pagamento</label
+        >
+        <select id="metodo_pagamento" name="metodo_pagamento">
+          <option>A Combinar</option>
+          <option>Dinheiro</option>
+          <option>Cartão Débito</option>
+          <option>Cartão Crédito</option>
+          <option>Boleto</option>
+          <option>Cheque</option>
+          <option>Outros</option>
+        </select>
+        <label class="acrescimo" for="acrescimo">Acréscimo: R$</label>
+        <input type="text" id="acrescimo" value="0" onkeyup="calcular()" />
+        <label class="desconto" for="desconto">Desconto: R$</label>
+        <input type="text" id="desconto" value="0" onkeyup="calcular()" />
+      </div>
+      <div class="total">
+        <label class="total" for="total">Total: R$</label>
+        <input type="text" id="total" readonly />
+      </div>
+      <div class="imprimir">
+        <button id="imprimir" onClick="window.print()">Imprimir</button>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer_black container">
+        <!--footer_black no style.css / container no grid.css-->
+        <div class="contato">
+          <p class="p1">Contato</p>
+          <ul class="p2">
+            <!-- contato, p1, p2 no style.css-->
+            <li>- 99 99999-9999</li>
+            <li>- contato@orcamentoapp.com.br</li>
+            <li>- Campinas - SP</li>
+          </ul>
+        </div>
+        <div class="redes">
+          <p class="p3">Redes Sociais</p>
+          <ul class="p4">
+            <!--redes, p3, p4 no style.css-->
+            <li class="facebook">
+              <a href="http://www.facebook.com" target="_blank"
+                ><img src="img/sociais/facebook.svg" alt="Facebook"
+              /></a>
+            </li>
+            <li class="twitter">
+              <a href="http://www.twitter.com" target="_blank"
+                ><img src="img/sociais/twitter.svg" alt="Twitter"
+              /></a>
+            </li>
+            <li class="instagram">
+              <a href="http://www.instagram.com" target="_blank"
+                ><img src="img/sociais/instagram.svg" alt="Instagram"
+              /></a>
+            </li>
+            <!--facebook, twitter, instragam no style.css-->
+          </ul>
+        </div>
+        <div class="footer_white container">
+          <!--footer_white no style.css / container no grid.css-->
+          <p>OrçamentoApp 2021 - Feito Por Wesley Alves</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/criaOrcamento.js"></script>
+  </body>
+</html>
